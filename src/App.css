@@ -1,79 +1,42 @@
-.input {
-flex: 1;
-padding: 0.5rem;
-border: 1px solid #ccc;
-border-radius: 5px;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
-
-.button {
-padding: 0.5rem 1rem;
-border: 1px solid #ccc;
-border-radius: 5px;
-background: #f5f5f5;
-cursor: pointer;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-
-.button:hover {
-background: #e0e0e0;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-
-.button.small {
-padding: 0.25rem 0.5rem;
-font-size: 0.85rem;
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }
 
-
-.list {
-list-style: none;
-padding: 0;
-margin: 0;
+.card {
+  padding: 2em;
 }
 
-
-.item {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 0.5rem;
-border: 1px solid #ddd;
-border-radius: 5px;
-margin-bottom: 0.5rem;
+.read-the-docs {
+  color: #888;
 }
-
-
-.label {
-display: flex;
-align-items: center;
-gap: 0.5rem;
-cursor: pointer;
-}
-
-
-.completed {
-text-decoration: line-through;
-color: #999;
-}
-
-
-.empty {
-font-size: 0.9rem;
-color: #777;
-}
-
-
-.footer {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-top: 1rem;
-}
-
-
-.info {
-font-size: 0.9rem;
-color: #555;
-}
-

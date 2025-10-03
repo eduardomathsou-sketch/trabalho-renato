@@ -1,13 +1,20 @@
-import React from 'react'
-import TodoList from './components/TodoList'
-import './App.css'
+// src/App.jsx
+import { useState } from "react";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import ListaAlunos from "./components/ListaAlunos";
 
-function App() {
+export default function App() {
+  const [alunos, setAlunos] = useState(["Maria", "João", "Pedro"]);
+
   return (
-    <div className="App">
-      <TodoList />
+    <div>
+      <Header />
+      <main>
+        <h2>Lista de Alunos</h2>
+        <ListaAlunos alunos={alunos} />
+      </main>
+      <Footer />
     </div>
-  )
+  );
 }
-
-export default App
